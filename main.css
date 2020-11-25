@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, img, p, ul, li, a, hr, header, nav, section {
+body, h1, h2, h3, h4, img, p, ul, li, a, hr, header, nav, section, footer {
   margin: 0px;
   padding: 0px;
 }
@@ -8,6 +8,10 @@ body, h1, h2, h3, h4, img, p, ul, li, a, hr, header, nav, section {
 body {
   background-color: #010611;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   max-width: 1000px;
   height: auto;
@@ -42,9 +46,9 @@ header {
 ul.topnav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 37%;
   overflow: hidden;
-  background-color: #333;
+  background-color: #0b1528;
 }
 .log {
 	float: right;
@@ -60,10 +64,15 @@ ul.topnav li a {
   transition: 0.3s;
   font-size: 17px;
 }
-ul.topnav li a:hover {background-color: #555;
+ul.topnav li a:hover {
+  background-color: #fece1a;
+  color: #0b1528;
 }
 ul.topnav li.icon {display: none;
 }
+
+
+
 
 .basic {
   height: 330px;
@@ -71,21 +80,156 @@ ul.topnav li.icon {display: none;
 
 .main-img img {
   float: left;
-  margin: 40px 11%;
+  position: relative;
+  margin: 40px 9%;
   box-shadow: 0px 0px 10px 1px;
   border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
 }
 .intro {
-  padding-top: 50px;
+  padding-top: 115px;
+  float: left;
+  position: relative;
 
 }
 .intro h2 {
-  text-align: center;
+  text-align: left;
   padding-bottom: 10px;
+  color: #101268;
 }
 .intro p {
   font-size: 20px;
   font-family: 'PT Serif', serif;
+  text-align: left;
+}
+
+
+
+
+
+.about {
+  background-color: #0b1528;
+}
+.about h2 {
   text-align: center;
-  padding: 0px 35px 18px;
+  padding: 30px 0px;
+  color: #fece1a;
+}
+.about p {
+  color: white;
+  font-family: 'PT Serif', serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+  ul.topnav li:not(:first-child) {display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav {
+    padding-left: 0px;
+  }
+  .intro h2 {
+    font-size: 18px;
+  }
+  .intro p {
+    font-size: 15px;
+  }
+  .main-img img {
+    margin: 40px 7%;
+  }
+
+}
+
+@media screen and (max-width:700px) {
+  ul.topnav.responsive {position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width:650px) {
+  .img {
+      margin: 10px auto;
+      display: block;
+      float: none;
+  }
+  .main-img img {
+    margin: 40px 6%;
+  }
+
+}
+
+@media screen and (max-width:560px) {
+  .Sanduni {
+    font-size: 65px;
+  }
+  .Rathnayake {
+    font-size: 50px;
+    padding-left: 55px;
+  }
+  .main-img img {
+    margin: 40px 24%;
+  }
+  .intro {
+    padding-top: 0px;
+    float: none;
+  }
+  .intro h2{
+    text-align: center;
+  }
+  .intro p{
+    text-align: center;
+  }
+  .basic {
+    height: 430px;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+
+  .main-img img {
+    margin: 40px 10%;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+
+  .main-img img {
+    margin: 40px 7%;
+  }
+  .intro {
+    padding-top: 0px;
+    float: none;
+  }
+  .intro h2 {
+    text-align: center;
+  }
+  .intro p {
+    text-align: center;
+  }
+  .basic {
+    height: 430px;
+  }
 }
