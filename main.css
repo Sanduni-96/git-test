@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, img, p, ul, li, a, hr, header, nav, section, footer {
+body, h1, h2, h3, h4, img, p, ul, li, a, hr, header, span, nav, section {
   margin: 0px;
   padding: 0px;
 }
@@ -12,6 +12,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#about {
+   background-color: #0b1528;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   padding-bottom: 20px;
+}
+
 main {
   max-width: 1000px;
   height: auto;
@@ -20,9 +28,7 @@ main {
   display: block;
   box-shadow: 0px 1px 20px 1px;
 }
-header {
-  background-color: #f5f5f5;
-}
+
 .logo {
 	margin: auto;
 	display:block;
@@ -46,7 +52,7 @@ header {
 ul.topnav {
   list-style-type: none;
   margin: 0;
-  padding-left: 37%;
+  padding-left: 33%;
   overflow: hidden;
   background-color: #0b1528;
 }
@@ -67,15 +73,16 @@ ul.topnav li a {
 ul.topnav li a:hover {
   background-color: #fece1a;
   color: #0b1528;
+  transition-delay: 0.35s;
 }
-ul.topnav li.icon {display: none;
+ul.topnav li.icon {
+  display: none;
 }
 
-
-
+/* Navigation End */
 
 .basic {
-  height: 330px;
+  height: 350px;
 }
 
 .main-img img {
@@ -92,7 +99,6 @@ ul.topnav li.icon {display: none;
   padding-top: 115px;
   float: left;
   position: relative;
-
 }
 .intro h2 {
   text-align: left;
@@ -104,31 +110,131 @@ ul.topnav li.icon {display: none;
   font-family: 'PT Serif', serif;
   text-align: left;
 }
-
-
-
-
+/* basik End */
 
 .about {
   background-color: #0b1528;
 }
-.about h2 {
+
+.about h3 {
   text-align: center;
   padding: 30px 0px;
   color: #fece1a;
 }
+
 .about p {
   color: white;
   font-family: 'PT Serif', serif;
 }
 
+.part1 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.part2 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.part1 p {
+  padding-left: 30px;
+}
+.part2 p {
+  padding-left: 25%;
+}
+
+/* about End */
+#education {
+   background-color: #fff;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   font-family: 'PT Serif', serif;
+   padding-bottom: 10px;
+}
+.part3, .part4 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.part3 h3, .part4 h3 {
+  text-align: center;
+  color: #101268;
+  padding: 25px 0px 20px;
+  font-size: 98%;
+}
+.part3 h4, .part4 h4 {
+  padding: 5px 0px 5px 10%;
+  color: #101268;
+  font-size: 90%;
+}
+.part3 p, .part4 p {
+  padding-left: 15%;
+}
+/* education End */
+
+#skills {
+   background-color: #0b1528;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   font-family: 'PT Serif', serif;
+}
+
+.part5, .part6 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.part5 {
+  padding-left: 10px;
+}
+.part5 h3, .part6 h3 {
+  text-align: center;
+  padding: 20px 0px 15px;
+  color: #fece1a;
+}
+.part5 p {
+  color: white;
+  padding: 5px 10px;
+}
+{box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  border-style: solid;
+  border-color: white;
+}
+
+.skills {
+  text-align: right;
+  font-weight: bold;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 10px;
+  color: #0b1528;
+
+}
+
+.team {width: 70%; background-color: #fece1a;}
+.communication {width: 90%; background-color: #fece1a;}
+.creativity {width: 80%; background-color: #fece1a;}
+.leadership {width: 90%; background-color: #fece1a;}
+.adaptability {width: 70%; background-color: #fece1a;}
+.flexibility {width: 80%; background-color: #fece1a;}
+
+/* skill End */
 
 
-
-
-
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:720px) {
   ul.topnav li:not(:first-child) {display: none;
   }
   ul.topnav li.icon {
@@ -147,10 +253,54 @@ ul.topnav li.icon {display: none;
   .main-img img {
     margin: 40px 7%;
   }
+  .part1 {
+    float: none;
+    width: 65%;
+    padding: 0px 18%;
+  }
+  .part1 p {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .part2 {
+    float: none;
+    width: 65%;
+    padding: 0px 16%;
+  }
+  .part2 p {
+    text-align: center;
+    padding-left: 0px;
+  }
+  #education {
+    padding-bottom: 0px;
+    padding-right: 5px;
+  }
+  .part3, .part4 {
+    float: none;
+    width: 100%;
+    border-style: solid;
+    border-color: #0b1528;
+    padding-bottom: 10px;
+  }
+  .part3 h4, .part4 h4 {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .part3 p, .part4 p {
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .part5, .part6 {
+    width: 100%;
+    float: none;
+  }
+  #skills {
+    padding: 0px 30px 0px 0px;
+  }
 
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:720px) {
   ul.topnav.responsive {position: relative;
   }
   ul.topnav.responsive li.icon {
@@ -174,6 +324,8 @@ ul.topnav li.icon {display: none;
       float: none;
   }
   .main-img img {
+    height: 230px;
+    width: 230px;
     margin: 40px 6%;
   }
 
@@ -232,4 +384,5 @@ ul.topnav li.icon {display: none;
   .basic {
     height: 430px;
   }
+
 }
