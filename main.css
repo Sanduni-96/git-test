@@ -11,15 +11,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-#about {
-   background-color: #0b1528;
-   background-position: right top;
-   background-repeat: repeat-y;
-   overflow: hidden;
-   padding-bottom: 20px;
-}
-
 main {
   max-width: 1000px;
   height: auto;
@@ -33,13 +24,13 @@ main {
 	margin: auto;
 	display:block;
 	font-family: 'Tangerine', cursive;
-	width: 210px;
+	width: 300px;
 	padding-top: 10px;
 }
 .Sanduni {
-    font-size: 75px;
-    color: #fece1a;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 75px;
+  color: #fece1a;
+  text-shadow: 2px 2px 4px #000000;
 }
 .Rathnayake {
   font-size: 60px;
@@ -52,7 +43,7 @@ main {
 ul.topnav {
   list-style-type: none;
   margin: 0;
-  padding-left: 33%;
+  padding-left: 26%;
   overflow: hidden;
   background-color: #0b1528;
 }
@@ -78,13 +69,10 @@ ul.topnav li a:hover {
 ul.topnav li.icon {
   display: none;
 }
-
-/* Navigation End */
-
+/* --------------------Navigation End----------------- */
 .basic {
   height: 350px;
 }
-
 .main-img img {
   float: left;
   position: relative;
@@ -110,30 +98,43 @@ ul.topnav li.icon {
   font-family: 'PT Serif', serif;
   text-align: left;
 }
-/* basik End */
-
+/* ----------------------------basik End---------------------------- */
+#about {
+   background-color: #0b1528;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   padding-bottom: 50px;
+   padding-top: 20px;
+}
+#contact {
+   background-color: #0b1528;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   padding-bottom: 50px;
+   padding-top: 20px;
+}
 .about {
   background-color: #0b1528;
 }
-
 .about h3 {
   text-align: center;
   padding: 30px 0px;
+  font-family: 'PT Serif', serif;
   color: #fece1a;
 }
-
 .about p {
   color: white;
   font-family: 'PT Serif', serif;
+  text-align: justify;
 }
-
 .part1 {
   height: auto;
   width: 50%;
   float: left;
   position: relative;
 }
-
 .part2 {
   height: auto;
   width: 50%;
@@ -146,8 +147,7 @@ ul.topnav li.icon {
 .part2 p {
   padding-left: 25%;
 }
-
-/* about End */
+/* ---------------------------about End----------------------------- */
 #education {
    background-color: #fff;
    background-position: right top;
@@ -162,41 +162,37 @@ ul.topnav li.icon {
   float: left;
   position: relative;
 }
-
 .part3 h3, .part4 h3 {
   text-align: center;
   color: #101268;
   padding: 25px 0px 20px;
-  font-size: 98%;
 }
 .part3 h4, .part4 h4 {
   padding: 5px 0px 5px 10%;
   color: #101268;
-  font-size: 90%;
 }
 .part3 p, .part4 p {
   padding-left: 15%;
 }
-/* education End */
-
+/* --------------------------education End -----------------------------*/
 #skills {
    background-color: #0b1528;
    background-position: right top;
    background-repeat: repeat-y;
    overflow: hidden;
    font-family: 'PT Serif', serif;
+   padding-bottom: 20px;
 }
-
-.part5, .part6 {
+.part5 {
   height: auto;
-  width: 50%;
+  width: 48%;
   float: left;
   position: relative;
 }
 .part5 {
   padding-left: 10px;
 }
-.part5 h3, .part6 h3 {
+.part5 h3 {
   text-align: center;
   padding: 20px 0px 15px;
   color: #fece1a;
@@ -208,12 +204,11 @@ ul.topnav li.icon {
 {box-sizing: border-box}
 
 .container {
-  width: 100%;
+  width: 95%;
   background-color: #ddd;
   border-style: solid;
   border-color: white;
 }
-
 .skills {
   text-align: right;
   font-weight: bold;
@@ -221,9 +216,7 @@ ul.topnav li.icon {
   padding-bottom: 1px;
   padding-right: 10px;
   color: #0b1528;
-
 }
-
 .team {width: 70%; background-color: #fece1a;}
 .communication {width: 90%; background-color: #fece1a;}
 .creativity {width: 80%; background-color: #fece1a;}
@@ -231,9 +224,136 @@ ul.topnav li.icon {
 .adaptability {width: 70%; background-color: #fece1a;}
 .flexibility {width: 80%; background-color: #fece1a;}
 
-/* skill End */
+.part6 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.part6 h3 {
+  color: #fece1a;
+  text-align: center;
+  padding: 20px 0px 40px;
+}
+.icon {
+  width: 33.3%;
+  float: left;
+}
+.icon img {
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  display: block;
+}
+.icon h4 {
+  text-align: center;
+  padding: 5px 0px;
+  color: #fff;
+}
+.part6-a {
+  padding-top: 10px;
+}
+.part6-b .icon {
+  padding-top: 30px;
+}
+/* --------------------------skill End --------------------------*/
+#tool {
+   background-color: #fff;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   font-family: 'PT Serif', serif;
+   padding-top: 15px;
+   padding-bottom: 30px;
+}
+.part7 {
+  height: auto;
+  width: 48%;
+  float: left;
+  position: relative;
+}
+.part7 {
+  padding-left: 10px;
+}
+.part7 h3 {
+  text-align: center;
+  padding: 25px 0px 20px;
+  color: #101268;;
+}
+.part7 p {
+  color: black;
+  font-size: 98%;
+  padding-left: 30px;
+}
+.part8 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.part8 h3 {
+  color: #101268;
+  text-align: center;
+  padding: 25px 0px 20px;
+}
+.part8 h4 {
+  color: #101268;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.part8 p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* --------------------------tool End --------------------------*/
+#contact {
+   background-color: #0b1528;
+   background-position: right top;
+   background-repeat: repeat-y;
+   overflow: hidden;
+   font-family: 'PT Serif', serif;
+   padding-top: 15px;
+   padding-bottom: 30px;
+}
+.part9 {
+  height: auto;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.part9 h3 {
+  color: #fece1a;
+  text-align: center;
+  padding: 25px 0px 30px;
+}
+.loc1 {
+  width: 12%;
+  float: left;
+  padding-left: 15%;
+}
+.loc1 img {
+  height: 35px;
+  width: 35px;
+  float: left;
+  padding-bottom: 20px;
+}
+.loc2 {
+  padding-top: 10px;
+}
+.loc2 p {
+  color: white;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.map {
+overflow: hidden;
+height: 350px;
+width: 50%;
+margin-bottom: 20px;
+margin-top: 25px;
+}
 
-
+/* --------------------------contact End --------------------------*/
 @media screen and (max-width:720px) {
   ul.topnav li:not(:first-child) {display: none;
   }
@@ -290,12 +410,57 @@ ul.topnav li.icon {
     text-align: center;
     padding: 0px 10px;
   }
-  .part5, .part6 {
+  .part5 {
     width: 100%;
     float: none;
   }
+  .container {
+    width: 96%;
+  }
   #skills {
-    padding: 0px 30px 0px 0px;
+    padding: 0px 10px 20px;
+  }
+  .part6 {
+    width: 75%;
+    float: none;
+    padding-left: 0px;
+    margin: auto;
+  }
+  .part6-b .icon {
+    padding-top: 30px;
+  }
+  .part7 {
+    width: 100%;
+    float: none;
+  }
+  .part7 {
+    padding-left: 0px;
+  }
+  .part7 p {
+    padding-left: 5px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .part8 {
+    width: 100%;
+    float: none;
+    padding-left: 0px;
+  }
+  .part8 h4, .part8 p {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .part9 {
+    width: 100%;
+    float: none;
+  }
+  .loc1 {
+    width: 9%;
+    padding-left: 30%;
+  }
+  .map {
+    height: auto;
+    width: 100%;
   }
 
 }
@@ -335,6 +500,9 @@ ul.topnav li.icon {
   .Sanduni {
     font-size: 65px;
   }
+  .logo {
+    width: 230px;
+  }
   .Rathnayake {
     font-size: 50px;
     padding-left: 55px;
@@ -355,19 +523,33 @@ ul.topnav li.icon {
   .basic {
     height: 430px;
   }
+  .loc1 {
+    padding-left: 18%;
+  }
+  .loc2 p {
+    margin-left: 30px;
+    font-size: 85%;
+  }
+
 
 }
 
 @media screen and (max-width:400px) {
-
   .main-img img {
     margin: 40px 10%;
   }
+  .part6 {
+    width: 90%;
+  }
+  .loc1 {
+    padding-left: 10%;
+    width: 12%;
+  }
+
 }
 
 
 @media screen and (max-width:320px) {
-
   .main-img img {
     margin: 40px 7%;
   }
@@ -383,6 +565,13 @@ ul.topnav li.icon {
   }
   .basic {
     height: 430px;
+  }
+  .loc1 {
+    padding-left: 5%;
+    width: 15%;
+  }
+  .loc2 p {
+    margin-left: 10px;
   }
 
 }
