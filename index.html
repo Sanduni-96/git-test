@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 	  <link href="https://fonts.googleapis.com/css?family=Tangerine|PT+Serif" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD78hx9SqotYvqPZbep9Mh5CXQZTAov2E&callback=initMap" ></script>
             <script type="text/javascript">
             // When the window has finished loading create our google map below
@@ -190,9 +191,9 @@
       <header id="home">
         <div class="logo">
           <h2>
-            <span class="Sanduni">Sanduni</span>
+            <span class="Sanduni">HELLO</span>
             <br>
-            <span class="Rathnayake">Rathnayake</span>
+            <span class="Rathnayake"> I'M SANDUNI RATHNAYAKE</span>
           </h2>
         </div>
         <nav>
@@ -200,9 +201,9 @@
 			      <li><a class="active" href="#home">Home</a></li>
 			      <li><a href="#about">About</a></li>
 			      <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#tool">Projects</a></li>
-			      <li><a href="#contact">Contact</a></li>
+           			      <li><a href="#skills">Skills</a></li>
+           			      <li><a href="#tool">Projects</a></li>
+			      <li><a href="#contact">Contacts</a></li>
 			      <li class="icon"><a href="javascript:void(0);" style="font-size:15px; float: right;" onclick="myFunction()">☰</a></li>
 			    </ul>
         </nav>
@@ -213,9 +214,10 @@
           <img src="images/main-img.jpg" alt="" height="240px" width="240px">
         </div>
         <div class="intro">
-          <h2>Sanduni Rathnayake</h2>
-          <p>Undergraduate BS.C (General)
-          <br>University of Sri Jayawardenapura
+          <h2>Welcome to my page.</h2>
+          <p>I'm Sanduni Rathnayake.
+          <br>Undergraduate BS.C (General)
+          <br>University of Sri Jayewardenepura
           </p>
         </div>
 
@@ -259,7 +261,7 @@
 
           <h4>SW47x: Entrepreneurship in Emerging Economies</h4>
           <p>Successfully completed and received a passing grade
-             ina course of study offered by HarvardX,
+             in a course of study offered by HarvardX,
              an online learning initiative of Harvard University.</p>
 
           <h4>G.C.E. Advance Level</h4>
@@ -332,6 +334,7 @@
 
         <div class="part6">
           <h3>HOBBIES & INTERESTS</h3>
+
           <div class="part6-a">
             <div class="icon">
               <img src="images/chess.png">
@@ -346,6 +349,7 @@
               <h4>Puzzle</h4>
             </div>
          </div>
+
          <div class="part6-b">
            <div class="icon">
              <img src="images/movie.png">
@@ -366,17 +370,24 @@
       <div class="tool" id="tool" >
         <div class="part7">
           <h3>PROJECTS</h3>
-          <p>Forecasting monthly dengue cases using climatic factors and population in Colombo district with Machine Learning (ongoing project-2020)
-            <br><br>
-            Resource allocation system <br>
-            GUI system with a normalised database for a hotel system by using Object Oriented Programming(2018)
-            <br><br>
-            Logistic model for harvesting <br>
-            Design a program to get maximum sustainable yield by considering population and growth rate for proportional harvesting by using matlab and maple software(2019)
-            <br><br>
-            Automatic menu driven program <br>
-            Maintains stocks for a company by using C programming language(2019)
-          </p>
+
+          <h4>Forecasting monthly dengue cases using climatic factors and population in Colombo district
+                   with Machine Learning (ongoing project-2020)</h4>
+            <br>
+
+            <h4>Resource allocation system </h4>
+            <p>GUI system with a normalised database for a hotel system by using Object
+                   Oriented Programming(2018)</p>
+            <br>
+
+            <h4>Logistic model for harvesting </h4>
+            <p>Design a program to get maximum sustainable yield by considering population and growth rate
+                   for proportional harvesting by using matlab and maple software(2019)</p>
+            <br>
+
+            <h4>Automatic menu driven program </h4>
+            <p>Maintains stocks for a company by using C programming language(2019)</p>
+
         </div>
         <div class="part8">
           <h3>TOOLS & TECHNOLOGY</h3>
@@ -388,6 +399,11 @@
           <p>MatLab | Maple</p>
           <h4>Design Tools</h4>
           <p>Adobe Photoshop | Adobe Illustrator</p>
+
+          <!--div class="main-img"-->
+          <img src="images/icon-img.jpg" alt="" height="240px" width="240px">
+          <!--/div-->
+
         </div>
         </div>
       </div>
@@ -411,6 +427,43 @@
                 </div>
             </div>
       </div>
+      <a href="#home"><div id="top"></div></a>
+      <script>
+      // Main page scrolling START
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 500, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      // Main page scrolling END
+
+      //logo splash START
+
+      $("#logo-top, #logo-line-top").stop().animate({opacity: 0},600,function(){
+        $(this).css({'background-image': "url()"})
+                   .animate({opacity: 1},{duration:200});
+     });
+    // logo splash END
+      </script>
     </main>
   </body>
 </html>
