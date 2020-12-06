@@ -78,15 +78,19 @@ ul.topnav li.icon {
 .main-img img {
   float: left;
   position: relative;
-  margin: 50px 9%;
+  padding-left: 100px;
+  padding-top: 20px;
+  /*margin: 50px 9%;
   box-shadow: 0px 0px 10px 1px;
   border-radius: 100%;
   border-style: solid;
   border-width: 8px;
-  border-color: white;
+  border-color: white;*/
 }
 .intro {
-  padding-top: 115px;
+  width: 50%;
+  padding-left: 70px;
+  padding-top: 200px;
   float: left;
   position: relative;
 }
@@ -312,15 +316,16 @@ ul.topnav li.icon {
   padding-bottom: 20px;
 }
 .icon-img img {
+   width: 50%;
   float: center;
   position: relative;
-  margin: 40px 9%;
+  padding-left: 100px;
+  /*margin: 40px 9%;
   box-shadow: 0px 0px 10px 1px;
   border-radius: 25%;
   border-style: solid;
   border-width: 10px;
-  border-color: white;
-  padding-left: 50px;
+  border-color: white;*/
 }
 /* --------------------------tool End --------------------------*/
 #contact {
