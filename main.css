@@ -21,26 +21,23 @@ main {
 }
 
 .logo {
-	margin: auto;
-	display:block;
-	width: 1000px;
-	padding-top: 10px;
+	font-family: "Times New Roman", Times, serif;
 }
-.Sanduni {
-  font-size: 60px;
-  font-family: "Times New Roman", Times, serif;
+.hello {
+  font-size: 50px;
   padding-left: 60px;
+  padding-top: 30px;
   color: #fece1a;
   text-shadow: 2px 2px 4px #000000;
 }
-.Rathnayake {
-  font-size: 60px;
-  font-family: "Times New Roman", Times, serif;
-  position: relative;
-  top: -10px;
-  padding-left: 90px;
+.sanduni {
+  font-size: 50px;
+  text-align: center;
   color: #101268;
   text-shadow: 2px 2px 4px #8c8c7b;
+  position: relative;
+  top: -10px;
+  padding-bottom: 20px;
 }
 ul.topnav {
   list-style-type: none;
@@ -75,22 +72,20 @@ ul.topnav li.icon {
 .basic {
   height: 500px;
 }
-.main-img img {
+.main-img {
+  width: 50%;
   float: left;
   position: relative;
-  padding-left: 100px;
-  padding-top: 20px;
-  /*margin: 50px 9%;
-  box-shadow: 0px 0px 10px 1px;
-  border-radius: 100%;
-  border-style: solid;
-  border-width: 8px;
-  border-color: white;*/
+}
+.main-img img {
+  margin: auto;
+  display: block;
+  padding-top: 50px;
+  height: 400px;
+  width: 300px;
 }
 .intro {
-  width: 50%;
-  padding-left: 70px;
-  padding-top: 200px;
+  padding-top: 190px;
   float: left;
   position: relative;
 }
@@ -104,14 +99,14 @@ ul.topnav li.icon {
   font-family: 'PT Serif', serif;
   text-align: left;
 }
-/* ----------------------------basic End---------------------------- */
+/* ----------------------------basik End---------------------------- */
 #about {
    background-color: #0b1528;
    background-position: right top;
    background-repeat: repeat-y;
    overflow: hidden;
-   padding-bottom: 70px;
-   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-top: 20px;
 }
 #contact {
    background-color: #0b1528;
@@ -191,7 +186,7 @@ ul.topnav li.icon {
 }
 .part5 {
   height: auto;
-  width: 100%;
+  width: 48%;
   float: left;
   position: relative;
 }
@@ -210,7 +205,7 @@ ul.topnav li.icon {
 {box-sizing: border-box}
 
 .container {
-  width: 50%;
+  width: 95%;
   background-color: #ddd;
   border-style: solid;
   border-color: white;
@@ -223,7 +218,7 @@ ul.topnav li.icon {
   padding-right: 10px;
   color: #0b1528;
 }
-.team {width: 70%; background-color: #fece1a;}
+.team {width: 70%; background-color: #fece1a; transition: width 2s linear 1s;}
 .communication {width: 90%; background-color: #fece1a;}
 .creativity {width: 80%; background-color: #fece1a;}
 .leadership {width: 90%; background-color: #fece1a;}
@@ -232,7 +227,7 @@ ul.topnav li.icon {
 
 .part6 {
   height: auto;
-  width: 100%;
+  width: 50%;
   float: left;
   position: relative;
 }
@@ -242,12 +237,12 @@ ul.topnav li.icon {
   padding: 20px 0px 40px;
 }
 .icon {
-  width: 16.6%;
+  width: 33.3%;
   float: left;
 }
 .icon img {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   margin: auto;
   display: block;
 }
@@ -256,11 +251,11 @@ ul.topnav li.icon {
   padding: 5px 0px;
   color: #fff;
 }
-.part6-a .icon {
+.part6-a {
   padding-top: 10px;
 }
 .part6-b .icon {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 /* --------------------------skill End --------------------------*/
 #tool {
@@ -285,10 +280,6 @@ ul.topnav li.icon {
   text-align: center;
   padding: 25px 0px 20px;
   color: #101268;;
-}
-.part7 h4 {
-  padding: 5px 0px 5px 10%;
-  color: #101268;
 }
 .part7 p {
   color: black;
@@ -315,17 +306,11 @@ ul.topnav li.icon {
   text-align: center;
   padding-bottom: 20px;
 }
-.icon-img img {
-   width: 50%;
-  float: center;
-  position: relative;
-  padding-left: 100px;
-  /*margin: 40px 9%;
-  box-shadow: 0px 0px 10px 1px;
-  border-radius: 25%;
-  border-style: solid;
-  border-width: 10px;
-  border-color: white;*/
+.part8 img {
+  height: 240px;
+  width: 240px;
+  margin: auto;
+  display: block;
 }
 /* --------------------------tool End --------------------------*/
 #contact {
@@ -414,6 +399,15 @@ margin-top: 25px;
 
 
 @media screen and (max-width:720px) {
+  .hello {
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .sanduni {
+    font-size: 40px;
+    top: 0px;
+  }
   ul.topnav li:not(:first-child) {display: none;
   }
   ul.topnav li.icon {
@@ -423,14 +417,15 @@ margin-top: 25px;
   ul.topnav {
     padding-left: 0px;
   }
+  .intro {
+    padding-top: 230px;
+    padding-left: 20px;
+  }
   .intro h2 {
     font-size: 18px;
   }
   .intro p {
     font-size: 15px;
-  }
-  .main-img img {
-    margin: 40px 7%;
   }
   .part1 {
     float: none;
@@ -547,30 +542,30 @@ margin-top: 25px;
       display: block;
       float: none;
   }
-  .main-img img {
-    height: 230px;
-    width: 230px;
-    margin: 40px 6%;
+  .hello {
+    font-size: 40px;
+    padding-top: 10px;
   }
+  .sanduni {
+    font-size: 30px;
+  }
+
 
 }
 
 @media screen and (max-width:560px) {
-  .Sanduni {
-    font-size: 65px;
-  }
-  .logo {
-    width: 230px;
-  }
-  .Rathnayake {
-    font-size: 50px;
-    padding-left: 55px;
+
+  .main-img {
+    width: 100%;
+    float: none;
   }
   .main-img img {
-    margin: 40px 24%;
+    height: 350px;
+    width: 250px;
   }
   .intro {
     padding-top: 0px;
+    padding-left: 0px;
     float: none;
   }
   .intro h2{
@@ -580,7 +575,7 @@ margin-top: 25px;
     text-align: center;
   }
   .basic {
-    height: 430px;
+    height: 560px;
   }
   .loc1 {
     padding-left: 18%;
@@ -589,14 +584,18 @@ margin-top: 25px;
     margin-left: 30px;
     font-size: 85%;
   }
+}
 
-
+@media screen and (max-width:420px) {
+  .hello {
+    font-size: 30px;
+  }
+  .sanduni {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width:400px) {
-  .main-img img {
-    margin: 40px 10%;
-  }
   .part6 {
     width: 90%;
   }
@@ -609,9 +608,7 @@ margin-top: 25px;
 
 
 @media screen and (max-width:320px) {
-  .main-img img {
-    margin: 40px 7%;
-  }
+
   .intro {
     padding-top: 0px;
     float: none;
@@ -622,8 +619,9 @@ margin-top: 25px;
   .intro p {
     text-align: center;
   }
-  .basic {
-    height: 430px;
+  .main-img img {
+    height: 300px;
+    width: 200px;
   }
   .loc1 {
     padding-left: 5%;
@@ -631,6 +629,10 @@ margin-top: 25px;
   }
   .loc2 p {
     margin-left: 10px;
+  }
+  .part8 img {
+    height: 200px;
+    width: 200px;
   }
 
 }
